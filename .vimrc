@@ -1,6 +1,6 @@
 " Basic settings to improve the default Vim experience 
-set nocompatible              " Be iMproved          
-set number                    " Show line numbers    
+set nocompatible              " Be iMproved
+set number                    " Show line numbers
 set relativenumber            " Show relative line numbers
 set showcmd                   " Display incomplete commands
 set cursorline                " Highlight current line
@@ -8,14 +8,14 @@ set mouse=a                   " Enable mouse support
 set clipboard=unnamedplus     " Use system clipboard
 set encoding=utf-8            " Use UTF-8 encoding
 filetype plugin indent on     " Enable filetype detection and indentation
-       
-" Use spaces instead of tabs  
-set expandtab                 
-set tabstop=4                 
-set shiftwidth=4              
-set softtabstop=4             
  
-" Searching                   
+" Use spaces instead of tabs  
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+ 
+" Searching
 set ignorecase                " Case insensitive searching
 set smartcase                 " Case sensitive when uppercase is used
 
@@ -23,10 +23,10 @@ set smartcase                 " Case sensitive when uppercase is used
 set autoindent            " Maintain indent of current line
 set smarttab              " Smart tabbing behavior
 
-       
+ 
 " Leader key
-let mapleader=" "             
-let g:mapleader=" "           
+let mapleader=" "
+let g:mapleader=" "
 
 " Key mappings
 nnoremap <expr> k (v:count == 0 ? 'gk' : 'k')
