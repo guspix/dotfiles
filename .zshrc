@@ -109,6 +109,11 @@ source $ZSH/oh-my-zsh.sh
 alias lc='colorls -lA --sd'
 source ~/.bash_aliases
 
+if [[ -f ~/.bash_secrets ]]; then
+    source ~/.bash_secrets
+fi
+
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
@@ -118,6 +123,8 @@ if [ -d "/opt/homebrew/opt/ruby/bin" ]; then
 fi
 
 export PATH="/Users/guspix/.local/share/bob/nvim-bin:$PATH"
+export "JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home"
+export ANDROID_HOME=$HOME/Library/Android/sdk && export PATH=$PATH:$ANDROID_HOME/emulator && export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
