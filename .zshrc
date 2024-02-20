@@ -125,6 +125,7 @@ fi
 export PATH="/Users/guspix/.local/share/bob/nvim-bin:$PATH"
 export "JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home"
 export ANDROID_HOME=$HOME/Library/Android/sdk && export PATH=$PATH:$ANDROID_HOME/emulator && export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH="/Users/guspix/dev/tmux-scripts:$PATH"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -152,3 +153,6 @@ export NVM_DIR="$HOME/.nvm"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+
+# Created by `pipx` on 2024-01-29 18:29:23
+export PATH="$PATH:/Users/guspix/.local/bin"
