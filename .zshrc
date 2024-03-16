@@ -127,25 +127,6 @@ export "JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home"
 export ANDROID_HOME=$HOME/Library/Android/sdk && export PATH=$PATH:$ANDROID_HOME/emulator && export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH="/Users/guspix/dev/tmux-scripts:$PATH"
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/guspix/tools/miniforge3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/guspix/tools/miniforge3/etc/profile.d/conda.sh" ]; then
-        . "/Users/guspix/tools/miniforge3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/guspix/tools/miniforge3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-
-if [ -f "/Users/guspix/tools/miniforge3/etc/profile.d/mamba.sh" ]; then
-    . "/Users/guspix/tools/miniforge3/etc/profile.d/mamba.sh"
-fi
-# <<< conda initialize <<<
-
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -156,3 +137,6 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 # Created by `pipx` on 2024-01-29 18:29:23
 export PATH="$PATH:/Users/guspix/.local/bin"
+
+eval $(thefuck --alias)
+. "$HOME/.cargo/env"

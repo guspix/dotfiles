@@ -8,6 +8,7 @@ return {
     defaults = {
       wrap_results = true,
       layout_strategy = "vertical",
+      hidden = true,
     },
   },
 }

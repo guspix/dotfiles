@@ -81,7 +81,15 @@ set incsearch
 set hidden
 
 " Set color scheme
-colorscheme torte
+" Attempt to set the 'catpuccin' colorscheme
+if !empty(globpath(&rtp, "colors/catppuccin_mocha.vim"))
+    set termguicolors
+    colorscheme catppuccin_mocha
+else
+    " Fallback to 'torte' if 'catpuccin' is not found
+    colorscheme torte
+endif
+
 
 " Increase command history
 set history=1000
