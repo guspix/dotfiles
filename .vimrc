@@ -83,6 +83,9 @@ set hidden
 " Set color scheme
 " Attempt to set the 'catpuccin' colorscheme
 if !empty(globpath(&rtp, "colors/catppuccin_mocha.vim"))
+" This is only necessary if you use "set termguicolors".
+    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
     set termguicolors
     colorscheme catppuccin_mocha
 else
@@ -115,3 +118,12 @@ nnoremap <C-l> <C-w>l
 " Close current buffer without closing window with leader b d
 nnoremap <leader>bd :bd<CR>
 
+" save undo info!
+if !isdirectory($HOME."/.vim")
+    call mkdir($HOME."/.vim", "", 0770)
+endif
+if !isdirectory($HOME."/.vim/undo-dir")
+    call mkdir($HOME."/.vim/undo-dir", "", 0700)
+endif
+set undodir=~/.vim/undo-dir
+set undofile

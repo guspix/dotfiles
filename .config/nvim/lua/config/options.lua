@@ -4,6 +4,9 @@
 
 vim.opt.clipboard = ""
 
+-- Also use local .nvim.lua files
+vim.opt.exrc = true
+
 -- Add specific filetypes
 vim.filetype.add({ pattern = { ["bash%-fc.*"] = "sh" }, extension = {
   ts = "typescriptreact",

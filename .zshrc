@@ -140,3 +140,11 @@ export PATH="$PATH:/Users/guspix/.local/bin"
 
 eval $(thefuck --alias)
 . "$HOME/.cargo/env"
+
+
+eval "$(gh copilot alias -- zsh)"
+
+# Set up fzf key bindings and fuzzy completion
+eval "$(fzf --zsh)"
+
+export LESS=-FRX
