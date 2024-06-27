@@ -148,3 +148,6 @@ eval "$(gh copilot alias -- zsh)"
 eval "$(fzf --zsh)"
 
 export LESS=-FRX
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
