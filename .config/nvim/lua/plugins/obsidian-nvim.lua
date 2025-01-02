@@ -26,5 +26,8 @@ return {
     templates = {
       subdir = "Templates",
     },
+    picker = {
+      name = "fzf-lua",
+    },
   },
 }

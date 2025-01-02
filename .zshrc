@@ -126,6 +126,7 @@ export PATH="/Users/guspix/.local/share/bob/nvim-bin:$PATH"
 export "JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home"
 export ANDROID_HOME=$HOME/Library/Android/sdk && export PATH=$PATH:$ANDROID_HOME/emulator && export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH="/Users/guspix/dev/tmux-scripts:$PATH"
+export PATH="/Users/guspix/go/bin:$PATH"
 
 
 export NVM_DIR="$HOME/.nvm"
@@ -142,12 +143,11 @@ eval $(thefuck --alias)
 . "$HOME/.cargo/env"
 
 
-eval "$(gh copilot alias -- zsh)"
 
 # Set up fzf key bindings and fuzzy completion
 eval "$(fzf --zsh)"
 
 export LESS=-FRX
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+
+# Use bat to view man pages
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
