@@ -1,0 +1,21 @@
+# Yabai window manager
+alt - l : yabai -m display --focus east
+alt - h : yabai -m display --focus west
+
+ctrl + alt - l : yabai -m window --display east  && yabai -m display --focus east # && yabai -m window --grid 1:1:0:0:1:1;
+ctrl + alt - h : yabai -m window --display west  && yabai -m display --focus west # && yabai -m window --grid 1:1:0:0:1:1;
+
+alt - 2 : yabai -m space --display 2
+
+alt - m : yabai -m window --grid 1:1:0:0:1:1
+
+# Open or focus applications
+lalt - c : open -a "ChatGPT"
+lalt - i : open -a "iTerm"
+lalt - w : open -a "WhatsApp"
+lalt - a : open -a "Arc"
+lalt - n : open -a "Nirvana"
+lalt - o : open -a "Obsidian"
+lalt - d : open -a "Discord"
+lalt - t : open -a "WezTerm"
+lalt - z : open -a "Zen Browser"
